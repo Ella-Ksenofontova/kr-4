@@ -31,7 +31,7 @@ if (!cartItems || !cartItems.length) {
             itemInOrder.classList.add("item-in-order");
 
             const img = document.createElement("img");
-            img.src = `../images/${item.image}`;
+            img.src = `./images/${item.image}`;
             img.classList.add("item-in-order__thumb");
 
             itemInOrder.appendChild(img);

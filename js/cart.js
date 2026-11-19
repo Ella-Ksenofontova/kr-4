@@ -28,7 +28,7 @@ function addCartItems() {
 
             const cartImage = document.createElement("img");
             cartImage.classList.add("cart-wrapper__img");
-            cartImage.src = `../images/${cartItem.image}`;
+            cartImage.src = `./images/${cartItem.image}`;
             cartImage.width = 200;
             cartWrapper.appendChild(cartImage);
 
