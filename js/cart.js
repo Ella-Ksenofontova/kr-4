@@ -33,6 +33,7 @@ function addCartItems() {
             cartWrapper.appendChild(cartImage);
 
             const itemInfo = document.createElement("div");
+            itemInfo.classList.add("cart-wrapper__info");
             cartWrapper.appendChild(itemInfo);
 
             const cartTitle = document.createElement("h2");
