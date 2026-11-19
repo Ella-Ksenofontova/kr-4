@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body class="no-overflow">
+    <header class="header">
+        <div class="site-header">
+            <a class="site-logo" href="index.html">MyShop</a>
+            <button class="site-nav-opener" id="toggle-site-nav">
+                <img src="./images/down-chevron.png" alt="Открыть навигацию" height="20" width="20">
+            </button>
+            <nav class="site-nav" aria-label="Основная навигация">
+                <ul class="site-nav__list">
+                    <li class="site-nav__list-item"><a href="./catalog.html" class="site-nav__link">Каталог</a></li>
+                    <li class="site-nav__list-item"><a href="./contacts.html" class="site-nav__link">Обратная связь</a>
+                    </li>
+                    <li class="site-nav__list-item"><a href="./cart.html" class="site-nav__link">Корзина</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main class="main">
+        <section class="section cart">
+            <h1 class="heading">Корзина</h1>
+            <div class="cart-items">
+
+            </div>
+            <div class="cart-sum"></div>
+            <a class="button" href="./order.html" id="order">Перейти к оформлению</a>
+        </section>
+    </main>
+</body>
+<script src="./js/cart.js" type="module"></script>
+</html>

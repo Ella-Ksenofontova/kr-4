@@ -6,18 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мой интернет-магазин</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 
 <body>
     <header class="header">
         <div class="site-header">
             <a class="site-logo" href="index.html">MyShop</a>
+            <button class="site-nav-opener" id="toggle-site-nav">
+                <img src="./images/down-chevron.png" alt="Открыть навигацию" height="20" width="20">
+            </button>
             <nav class="site-nav" aria-label="Основная навигация">
                 <ul class="site-nav__list">
                     <li class="site-nav__list-item"><a href="./catalog.html" class="site-nav__link">Каталог</a></li>
-                    <li class="site-nav__list-item"><a href="./order.html" class="site-nav__link">Оформить заказ</a>
-                    </li>
                     <li class="site-nav__list-item"><a href="./contacts.html" class="site-nav__link">Обратная связь</a>
+                    </li>
+                    <li class="site-nav__list-item"><a href="./cart.html" class="site-nav__link">Корзина</a>
                     </li>
                 </ul>
             </nav>
@@ -109,10 +113,10 @@
         </div>
     </main>
     <footer id="contacts" class="footer">
-        <p>&copy; 2026 Элла Ксенофонтова. Все права защищены.</p>
-        <p><a class="footer__link" href="tel:89858944403">+7 (985)-894-44-03</a></p>
+        <p class="footer__paragraph">&copy; 2026 Элла Ксенофонтова. Все права защищены.</p>
+        <p class="footer__paragraph"><a class="footer__link" href="tel:89858944403">+7 (985)-894-44-03</a></p>
     </footer>
-    <script src="./js/index.js"></script>
+    <script src="./js/index.js" type="module"></script>
 </body>
 
 </html>

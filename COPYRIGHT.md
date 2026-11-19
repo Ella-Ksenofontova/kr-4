@@ -11,3 +11,5 @@
 * https://www.flaticon.com/authors/th-studio
 * https://www.flaticon.com/authors/gregor-cresnar
 * https://www.flaticon.com/authors/tanah-basah
+* https://www.flaticon.com/authors/herikus
+* https://www.flaticon.com/authors/catalin-fertu
