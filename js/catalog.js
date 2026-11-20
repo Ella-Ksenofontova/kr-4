@@ -147,6 +147,13 @@ function addItems(items) {
         const card = document.createElement("article");
         card.classList.add("product-card");
 
+        if (item.badgeText) {
+            const badge = document.createElement("div");
+            badge.classList.add("badge", `badge_${item.badgeType}`);
+            badge.textContent = item.badgeText;
+            card.appendChild(badge);
+        }
+
         const cardImage = document.createElement("img");
         cardImage.classList.add("product-card__image");
         cardImage.src = `./images/${item.image}`;
@@ -193,7 +200,8 @@ function addItems(items) {
                 showMessage("Товар добавлен в корзину");
             }
         });
-        cartButton.textContent = "В корзину";
+        cartButton.textContent = item.isAvailable ? "В корзину" : "Нет в наличии";
+        cartButton.disabled = !item.isAvailable;
 
         content.appendChild(cardTitle);
         content.appendChild(cardDescription);

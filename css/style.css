@@ -62,6 +62,9 @@ body {
   --message-border-color: #5ce75c;
   --button-danger-color: #b02f2f;
   --button-danger-hover-color: #6d1b1b;
+  --button-disabled-bg-color: #c0c0c0;
+  --button-disabled-hover-bg-color: #a0a0a0;
+  --button-disabled-text-color: #222222;
 }
 
 .header,
@@ -204,6 +207,16 @@ body {
 
 .button:hover {
   background-color: var(--primary-hover-color);
+}
+
+.button:disabled {
+  background-color: var(--button-disabled-bg-color);
+  color: var(--button-disabled-text-color);
+}
+
+.button:disabled:hover {
+  background-color: var(--button-disabled-hover-bg-color);
+  color: var(--button-disabled-text-color);
 }
 
 .button_danger {
